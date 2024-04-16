@@ -6,10 +6,10 @@ import ExperienceCard from "./experience-card";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
-  { name: "Technologies", href: "#tech" },
-  { name: "Projects", href: "#project" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/#about" },
+  { name: "Technologies", href: "/#tech" },
+  { name: "Projects", href: "/#project" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 const experience = [
@@ -168,8 +168,9 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={() => setMobileMenuOpen(false)}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >
+                      > 
                         {item.name}
                       </a>
                     ))}
@@ -219,7 +220,7 @@ export default function Example() {
 
       <div
         className="bg-white lg:py-8 sm:py-12 lg:px-8 sm:px-8 flex justify-center items-center"
-        id="tech"
+        id="about"
       >
         <div className="flex-col justify-center items-center max-w-2xl text-center grow">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -311,7 +312,7 @@ export default function Example() {
       </div>
 
       <div className="bg-white lg:py-8 sm:py-8" id="contact">
-        <div className="flex gap-x-8  gap-y-12 justify-between px-6 mx-6 py-6 shadow-md shadow-zinc-200 mb-2 items-center flex-wrap-reverse">
+        <div className="flex gap-x-8  gap-y-12 justify-between px-6 mx-6 py-6 border-b-2 border-zinc-200 mb-2 items-center flex-wrap-reverse">
           <div className="flex justify-center items-center gap-x-4">
             <a href="#home" className="flex justify-start items-center gap-x-2">
               <img
