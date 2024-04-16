@@ -248,6 +248,7 @@ export default function Example() {
           <div className="flex justify-center items-center w-auto gap-y-10 flex-wrap gap-x-12">
             {experience.map((exp) => (
               <ExperienceCard
+                key={exp.company}
                 role={exp.role}
                 company={exp.company}
                 location={exp.location}
@@ -267,7 +268,10 @@ export default function Example() {
           </div>
           <div className="flex justify-center mt-8 mb-8 pb-4 mx-6 min-w-80 gap-x-20 flex-wrap">
             {Techs.map((tech) => (
-              <div className="flex-col items-center justify-center py-12">
+              <div
+                className="flex-col items-center justify-center py-12"
+                key={tech.name}
+              >
                 <img
                   className="h-10 w-10 object-cover rounded-full"
                   src={tech.icon}
@@ -291,7 +295,10 @@ export default function Example() {
           </div>
           <div className="flex justify-center mt-16 mb-10 pb-1.5 mx-8 min-w-80 gap-x-10 flex-wrap">
             {Projects.map((project) => (
-              <div className="flex items-center justify-center py-4 grow basis-8">
+              <div
+                className="flex items-center justify-center py-4 grow basis-8"
+                key={project.name}
+              >
                 <ActionAreaCard
                   name={project.name}
                   image={project.image}

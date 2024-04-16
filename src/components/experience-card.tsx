@@ -5,12 +5,14 @@ import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
 
 export default function ExperienceCard({
+  key,
   role,
   company,
   location,
   from,
   to,
 }: {
+  key: string;
   role: string;
   company: string;
   location: string;
@@ -18,7 +20,15 @@ export default function ExperienceCard({
   to: string;
 }) {
   return (
-    <Card  sx={{maxWidth:"10rem", boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"}}className="flex-col justify-center mb-10 w-auto mx-4 max-w-4xl">
+    <Card
+      key={key}
+      sx={{
+        maxWidth: "10rem",
+        boxShadow:
+          "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
+      }}
+      className="flex-col justify-center mb-10 w-auto mx-4 max-w-4xl"
+    >
       <CardContent className="w-72 max-h-60 min-h-36">
         <div className="flex justify-between px-4 py-4 flex-wrap gap-x-6 gap-y-8">
           <div className="flex-col items-left text-left">
@@ -60,7 +70,6 @@ export default function ExperienceCard({
               className="font-semibold bg-emerald-100 mt-4"
             />
           </div>
-          
         </div>
       </CardContent>
     </Card>
