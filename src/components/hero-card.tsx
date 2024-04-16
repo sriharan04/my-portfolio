@@ -266,7 +266,7 @@ export default function Example() {
               My Tech Stack
             </p>
           </div>
-          <div className="flex justify-center mt-8 mb-8 pb-4 mx-6 min-w-80 gap-x-20 flex-wrap">
+          <div className="flex justify-center mt-8 mb-8 pb-4 mx-2 min-w-80 gap-x-20 flex-wrap">
             {Techs.map((tech) => (
               <div
                 className="flex-col items-center justify-center py-12"
@@ -293,7 +293,7 @@ export default function Example() {
               Projects
             </p>
           </div>
-          <div className="flex justify-center mt-16 mb-10 pb-1.5 mx-8 min-w-80 gap-x-10 flex-wrap">
+          <div className="flex justify-center mt-16 mb-10 pb-1.5 mx-2 min-w-80 gap-x-10 flex-wrap">
             {Projects.map((project) => (
               <div
                 className="flex items-center justify-center py-4 grow basis-8"
@@ -311,7 +311,7 @@ export default function Example() {
       </div>
 
       <div className="bg-white lg:py-8 sm:py-8" id="contact">
-        <div className="flex gap-x-8  gap-y-12 justify-between px-6 mx-6 py-6 shadow-md shadow-zinc-300 mb-2 items-center flex-wrap-reverse">
+        <div className="flex gap-x-8  gap-y-12 justify-between px-6 mx-6 py-6 shadow-md shadow-zinc-200 mb-2 items-center flex-wrap-reverse">
           <div className="flex justify-center items-center gap-x-4">
             <a href="#home" className="flex justify-start items-center gap-x-2">
               <img

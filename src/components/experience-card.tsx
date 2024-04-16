@@ -5,14 +5,12 @@ import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
 
 export default function ExperienceCard({
-  key,
   role,
   company,
   location,
   from,
   to,
 }: {
-  key: string;
   role: string;
   company: string;
   location: string;
@@ -21,7 +19,6 @@ export default function ExperienceCard({
 }) {
   return (
     <Card
-      key={key}
       sx={{
         maxWidth: "10rem",
         boxShadow:
