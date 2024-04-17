@@ -24,8 +24,8 @@ const experience = [
     role: "Frontend Developer",
     company: "Kissflow",
     location: "Chennai",
-    from: "Mar 2022",
-    to: "Feb 2021",
+    from: "Feb 2021",
+    to: "Mar 2022",
   },
   {
     role: "Software Developer",
@@ -170,7 +170,7 @@ export default function Example() {
                         href={item.href}
                         onClick={() => setMobileMenuOpen(false)}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      > 
+                      >
                         {item.name}
                       </a>
                     ))}
@@ -333,8 +333,18 @@ export default function Example() {
               j.sriharan.04@gmail.com
             </p>
             <div className="flex justify-center gap-x-2  gap-y-6 flex-wrap">
-              <img src="/github-footer.png" className="h-7 w-7 rounded-full" />
-              <img src="/linkedin.png" className="h-7 w-7 rounded-full" />
+              <a href="https://github.com/sriharan04" target="_blank">
+                <img
+                  src="/github-footer.png"
+                  className="h-7 w-7 rounded-full"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sriharan-jeyachandran-4a4a32121/"
+                target="_blank"
+              >
+                <img src="/linkedin.png" className="h-7 w-7 rounded-full" />
+              </a>
             </div>
           </div>
         </div>
